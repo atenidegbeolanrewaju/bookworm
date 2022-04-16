@@ -1,13 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 import Login from './components/login';
 import Signup from './components/signup';
+import Dashboard from './components/dashboard';
 import './index.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-      <Signup />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<Dashboard />} />
+          <Route exact path='/signin' element={<Login />} />
+          <Route exact path='/signup' element={<Signup />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
 

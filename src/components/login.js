@@ -1,8 +1,14 @@
-import React from 'react'
-// import Link from '@material-ui/core/Link';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+import ShowIcon from '@material-ui/icons/Visibility'
+import ShowOffIcon from '@material-ui/icons/VisibilityOff'
 
-function Login() {
+
+const Login = () => {
+
+  const [pwd, setPass] = useState('')
+  const [isRevPass, setIsRevPass] = useState(false)
+
   return (
     <div className='container'>
       <div className='cont'>
@@ -19,9 +25,12 @@ function Login() {
               <a href='#' className='social-pw pw-label-right'>Forgot Password?</a>
             </div>
             <div className='input-field'>
-              <input type='password' placeholder='******' className='pwPH'/>
-              <i className='far fa-eye'></i>
-            </div>
+              <input type={isRevPass ? 'text' : 'password'} placeholder='******' onChange={e => setPass(e.target.value)} className='pwPH'/>
+              <button className='btnPV' type='button' onClick={() => setIsRevPass(prevState => !prevState)}>
+                {isRevPass ? <ShowOffIcon/> : <ShowIcon/>}
+                </button>
+              {/* <i className='far fa-eye'></i> */}
+             </div>
             <div className='login-info'>
               <div className='logged-in'>
                 <i className=''></i>
@@ -34,7 +43,7 @@ function Login() {
             </div>
             </div>
             <div className='account_'>
-              <p>Don't have an account? <a href='/signup' className='social-pw'>Sign up</a></p>
+              <p>Don't have an account? <Link to='/signup' className='social-pw'>Sign up</Link></p>
             </div>
             </form>
             <div className='social-text'>
@@ -51,6 +60,6 @@ function Login() {
         </div>
     </div>
   )
-}
+};
 
 export default Login

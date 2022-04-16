@@ -176,7 +176,7 @@ h4 a {
   line-height: 1;
   font-weight: 500px;
   font-size: 1.1rem;
-  color: #acacac;
+  color: black;
 }
 
 .input-field i {
@@ -246,6 +246,19 @@ h4 a {
 .btn:hover {
   background-color: rgb(18, 18, 202)
 }
+
+.btnPV {
+  border: none;
+  width: 35px;
+  background-color: white;
+  color: #acacac;
+  cursor: pointer;
+
+}
+
+/* .btnPV:hover {
+  cursor: pointer
+} */
 
 .account_ {
   margin-bottom: 15px;
