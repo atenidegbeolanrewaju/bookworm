@@ -30,7 +30,7 @@ const Signup = () => {
               {/* <a href='#' className='social-pw pw-label-right'>Forgot Password?</a> */}
             </div>
             <div className='input-field'>
-              <input type={isRevPass ? 'text' : 'password'} placeholder='******' onChange={e => setPass(e.target.value)} className='pwPH'/>
+              <input type={isRevPass ? 'text' : 'password'} placeholder='********' onChange={e => setPass(e.target.value)} className='pwPH'/>
               <button className='btnPV' type='button' onClick={() => setIsRevPass(prevState => !prevState)}>
                 {isRevPass ? <ShowOffIcon/> : <ShowIcon/>}
                 </button>

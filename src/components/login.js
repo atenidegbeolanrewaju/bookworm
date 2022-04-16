@@ -25,7 +25,7 @@ const Login = () => {
               <a href='#' className='social-pw pw-label-right'>Forgot Password?</a>
             </div>
             <div className='input-field'>
-              <input type={isRevPass ? 'text' : 'password'} placeholder='******' onChange={e => setPass(e.target.value)} className='pwPH'/>
+              <input type={isRevPass ? 'text' : 'password'} placeholder='********' onChange={e => setPass(e.target.value)} className='pwPH'/>
               <button className='btnPV' type='button' onClick={() => setIsRevPass(prevState => !prevState)}>
                 {isRevPass ? <ShowOffIcon/> : <ShowIcon/>}
                 </button>
@@ -33,7 +33,7 @@ const Login = () => {
              </div>
             <div className='login-info'>
               <div className='logged-in'>
-                <i className=''></i>
+                <input type='checkbox' className='' />
                 <p>Keep me logged in</p>
               </div>
                 <div className='btn-div'><button type='button' className='btn solid'>Sign In</button></div>
