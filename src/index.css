@@ -43,13 +43,14 @@ code {
   justify-content: center; 
   align-items: center; 
   align-content: center;
+  margin-bottom: 150px;
   
 }
 
 .title {
   color: blue;
   font-size: 1.6rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 3.5rem;
   width: 440px;
   margin-top: 15px;
   display: flex;
@@ -155,7 +156,6 @@ h4 a {
 }
 
 .input-field {
-  max-width: 360;
   width: 365px;
   height: 55px;
   border: 0.1rem #6d6b6b solid;
@@ -215,8 +215,7 @@ h4 a {
   float:left;
   display: flex;
   color: #6d6b6b;
- 
-}
+ }
 
 .logged-in input {
   width: 20px;
@@ -321,4 +320,221 @@ h4 a {
 .social-icon:hover {
   color: blue;
   border-color: rgb(1, 77, 1);
+}
+
+/* $desktop:1200px;
+$laptop:1024px;
+$tablet: 768px;
+$phone:  480px */
+
+@media screen and (max-width:1200px) and (min-width:768px) {
+  .formContainer {
+    padding: 5rem 5rem;
+    margin-top: -10px;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width:768px) and (min-width:480px) {
+  .formContainer {
+    padding: 5rem 5rem;
+    margin-top: -10px;
+  }
+}
+
+@media screen and (max-width:480px) and (min-width:350px) {
+  .formContainer {
+    padding: 5rem 5rem;
+    margin-top: -10px;
+    border-color: blue; 
+    width: 92%;
+    /* display: flex; */
+    justify-content: center; 
+    border: none;
+  }  
+
+  .title {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  form {
+    border: none;
+  }
+
+  .input-field {
+    width: 320px;
+  }
+
+  .btn {
+    width: 100px;
+    margin: 3px 0;
+  }
+
+  .btnPV {
+    width: 30px;
+       
+  }
+
+  .logged-in {
+    width: 114%;
+  }
+
+  .pw-label {
+  margin-top: 5px;
+  display: flex;
+  width: 332px;
+  }
+
+  .signin-form {
+    align-content: center;
+  }
+
+  .account_ {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    border: 0.1rem rgb(86, 86, 90) solid;
+    width: 320px
+  }
+
+  .social-text {
+    margin-top: 0px;
+    border: none;
+    width: 400px;
+  }
+  
+}
+
+@media screen and (max-width:350px) {
+  .formContainer {
+    padding: 5rem 5rem;
+    margin-top: -10px;
+    border-color: blue; 
+    width: 79%;
+    /* display: flex; */
+    justify-content: center; 
+    border: none;
+  }  
+
+  .title {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  form {
+    border: none;
+  }
+
+  .input-field {
+    width: 240px;
+    height: 40px;
+    border: 0.1rem #6d6b6b solid;
+    /* border: none; */
+    /* background-color: #f0f0f0 ; */
+    margin: 10px 0;
+    border-radius: 2px;
+    
+  }
+
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 300px;
+    font-size: 0.9rem;
+    color: black;
+  }
+
+  .btn {
+    width: 70px;
+    margin: 5px 0;
+    height: 30px;
+    font-size: 0.8rem;
+    text-transform: none;
+  }
+
+  .user-label {
+    font-size: 0.9rem;
+  }
+
+  .pw-label-left {
+    /* padding: 20px ;
+    margin: 10px 20px; */
+    width: 150%;
+    float:left;
+    display: flex;
+    font-size: 0.9rem;
+  }
+  
+  .pw-label-right {
+    /* padding: 20px ;
+    margin: 10px 20px; */
+    width: 710px;
+    float:right;
+    display: flex;
+    font-size: 0.9rem;
+  }
+
+  .btnPV {
+    width: 0px;
+    font-size: 0.5rem;
+  }
+
+ 
+  .logged-in {
+    width: 48%;
+    font-size: 0.85rem;
+  }
+
+  .login-info {
+    max-width: 450px;
+    width: 430px;
+  }
+  
+
+  .pw-label {
+  margin-top: 5px;
+  display: flex;
+  width: 332px;
+  }
+
+  .signin-form {
+    align-content: center;
+  }
+
+  .account_ {
+    border: 0.1rem rgb(86, 86, 90) solid;
+    width: 239px;
+    font-size: 0.8rem;
+    /* height: 25px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .social-text {
+    margin-top: -30px;
+    border: none;
+    width: 325px;
+    font-size: 0.8rem;
+  }
+
+  .social-pw {
+    font-size: 0.8rem;
+  }
+
+  .social-media {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    height: 35px;
+    width: 35px;
+    margin: 0 0.4rem;
+    font-size: 0.8rem;
+  }
 }

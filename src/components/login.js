@@ -27,7 +27,7 @@ const Login = () => {
             <div className='input-field'>
               <input type={isRevPass ? 'text' : 'password'} placeholder='********' onChange={e => setPass(e.target.value)} className='pwPH'/>
               <button className='btnPV' type='button' onClick={() => setIsRevPass(prevState => !prevState)}>
-                {isRevPass ? <ShowOffIcon/> : <ShowIcon/>}
+                {isRevPass ? <ShowIcon/> : <ShowOffIcon/>}
                 </button>
               {/* <i className='far fa-eye'></i> */}
              </div>
