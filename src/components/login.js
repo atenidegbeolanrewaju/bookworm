@@ -37,9 +37,6 @@ const Login = () => {
                 <p>Keep me logged in</p>
               </div>
                 <div className='btn-div'>
-                  {/* <button type='button' className='btn solid'>
-                    Sign In
-                  </button> */}
                   <Button handleClick={() => alert('Signed In successfully')} type='submit' className='btn solid'>
                     Sign In
                   </Button>

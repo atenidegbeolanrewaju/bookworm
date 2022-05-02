@@ -38,11 +38,8 @@ const Signup = () => {
             </div>
             <div className='signup-info'>
               <div className='signup-btn-div'>
-                {/* <button type='button' className='btn solid'>
-                  Sign up
-                </button></div> */}
                 <Button handleClick={() => alert('Signed Up successfully')} type='submit' className='btn solid'>
-                    Sign Up
+                  Sign Up
                 </Button>
             </div>
             
