@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import ShowIcon from '@material-ui/icons/Visibility'
 import ShowOffIcon from '@material-ui/icons/VisibilityOff'
+import Button from './Button';
 
 
 const Login = () => {
@@ -28,15 +29,21 @@ const Login = () => {
               <input type={isRevPass ? 'text' : 'password'} placeholder='********' onChange={e => setPass(e.target.value)} className='pwPH'/>
               <button className='btnPV' type='button' onClick={() => setIsRevPass(prevState => !prevState)}>
                 {isRevPass ? <ShowIcon/> : <ShowOffIcon/>}
-                </button>
-              {/* <i className='far fa-eye'></i> */}
+              </button>
              </div>
             <div className='login-info'>
               <div className='logged-in'>
                 <input type='checkbox' className='' />
                 <p>Keep me logged in</p>
               </div>
-                <div className='btn-div'><button type='button' className='btn solid'>Sign In</button></div>
+                <div className='btn-div'>
+                  {/* <button type='button' className='btn solid'>
+                    Sign In
+                  </button> */}
+                  <Button handleClick={() => alert('Signed In successfully')} type='submit' className='btn solid'>
+                    Sign In
+                  </Button>
+                </div>
             </div>
             <div className=''>
               <h4></h4>
@@ -50,10 +57,10 @@ const Login = () => {
             <p className='social-signin'>or Sign in with</p>
             <div className='social-media'>
               <a href='#' className='social-icon'>
-                <i class='fab fa-github'></i>
+                <i className='fab fa-github'></i>
               </a>
               <a href='#' className='social-icon'>
-                <i class='fab fa-google'></i>
+                <i className='fab fa-google'></i>
               </a></div>
             </div>
         </div>

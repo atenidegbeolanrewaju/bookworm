@@ -265,10 +265,6 @@ h4 a {
   
 }
 
-/* .btnPV:hover {
-  cursor: pointer
-} */
-
 .account_ {
   margin-bottom: 15px;
   display: flex;
@@ -349,28 +345,6 @@ $phone:  480px */
     margin-top: -10px;
     border: none
   }
-
-   /* form {
-    border-radius: 2%;
-    box-shadow: 2px 2px 4px blue;
-    padding: 0 1rem;
-    padding-top: 2.0rem;
-    padding-bottom: 2.0rem;
-  }  */
-
-  /* .signin-form{
-    width: 420px;
-    box-shadow: none;
-  } */
-
-  /* .social-text {
-    box-shadow: none;
-  } */
-
-  /* .account_ {
-   width: 420px;
-   box-shadow: none;
-  } */
 } 
 
 @media screen and (max-width:480px) and (min-width:350px) {

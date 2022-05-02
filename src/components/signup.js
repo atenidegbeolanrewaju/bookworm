@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ShowIcon from '@material-ui/icons/Visibility'
 import ShowOffIcon from '@material-ui/icons/VisibilityOff'
+import Button from './Button';
 
 const Signup = () => {
 
@@ -32,16 +33,23 @@ const Signup = () => {
             <div className='input-field'>
               <input type={isRevPass ? 'text' : 'password'} placeholder='********' onChange={e => setPass(e.target.value)} className='pwPH'/>
               <button className='btnPV' type='button' onClick={() => setIsRevPass(prevState => !prevState)}>
-                {isRevPass ? <ShowOffIcon/> : <ShowIcon/>}
-                </button>
+                {isRevPass ? <ShowIcon/> : <ShowOffIcon/>}
+              </button>
             </div>
             <div className='signup-info'>
-              <div className='signup-btn-div'><button type='button' className='btn solid'>Sign up</button></div>
+              <div className='signup-btn-div'>
+                {/* <button type='button' className='btn solid'>
+                  Sign up
+                </button></div> */}
+                <Button handleClick={() => alert('Signed Up successfully')} type='submit' className='btn solid'>
+                    Sign Up
+                </Button>
             </div>
             
             </div>
             <div className='account_'>
               <p>Already have an account? <Link to='/signin' className='social-pw'>Sign in</Link></p>
+            </div>
             </div>
             </form>
             <div className='social-text'>
