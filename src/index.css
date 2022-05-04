@@ -74,7 +74,7 @@ code {
 form {
   border: none;
   border-radius: 2%;
-  box-shadow: 2px 2px 4px blue;
+  box-shadow: 2px 2px 4px rgb(143, 143, 148);
   padding: 0 2.2rem;
   padding-top: 2.0rem;
   padding-bottom: 2.0rem;
@@ -273,7 +273,7 @@ h4 a {
   align-content: center;
   padding-top: 10px;
   background-color: white;
-  box-shadow: 2px 2px 4px blue;
+  box-shadow: 2px 2px 4px rgb(143, 143, 148);
 }
 
 .social-signin {
