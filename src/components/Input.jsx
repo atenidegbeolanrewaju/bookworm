@@ -15,7 +15,7 @@ const Input = ({ label, type, placeholder, onChange, showForgetPassword, showVis
         </div>
         <div className='input-field'>
             <input type={type} placeholder={placeholder} label={label} onChange={onChange} className= 'userPH'/>
-            {showVisibilityButton && (<Button className='btnPV' handleClick={() => setIsRevPass(prevState => !prevState)}>
+            {showVisibilityButton && (<Button className='btnPV' handleClick={() => setIsRevPass(!isRevPass)}>
                                         {isRevPass ? <ShowIcon/> : <ShowOffIcon/>}
                                       </Button>)}
         </div>
