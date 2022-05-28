@@ -12,7 +12,6 @@ const Navbar = () => {
       <li><Link to='#' className='Nav-link'>About</Link></li>
       <li><Link to='#' className='Nav-link'>Service</Link></li>
       <li><Link to='#' className='Nav-link'>Contact Us</Link></li>
-      <li><Link to='/signup' className='Nav-link'>Sign up</Link></li>
       <li>
         <Link to='/signin'>
           <Button handleClick type='submit' className='btn solid'>
@@ -24,7 +23,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className='dashboard'>
+    <div className='Navbar-container'>  
       <nav className='Nav-bar'>
         <div className='Nav-logo'>
           <h2 className='logo'>Bookworm</h2>

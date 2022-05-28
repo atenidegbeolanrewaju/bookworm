@@ -4,7 +4,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
 
+a {
+  text-decoration: none !important;
 }
 
 body,
@@ -34,8 +37,7 @@ code {
   justify-content: center;
   align-items: center; 
   align-content: center;
-  border: solid;
-  
+
 }
 
 .cont {
@@ -82,7 +84,7 @@ form {
 
 .signin-form {
   width: 440px;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 h4 a {
@@ -228,7 +230,7 @@ h4 a {
   width: 125px;
   background-color: blue;
   border-radius: 7%;
-  color: white;
+  color: whitesmoke;
   font-weight: bold;
   text-transform: uppercase;
   margin: 5px 0;
@@ -272,7 +274,7 @@ h4 a {
   border-radius: 3%;
   align-content: center;
   padding-top: 10px;
-  background-color: white;
+  background-color: whitesmoke;
   box-shadow: 2px 2px 4px rgb(143, 143, 148);
 }
 

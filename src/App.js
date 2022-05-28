@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Login from './components/login';
 import Signup from './components/signup';
-import Dashboard from './components/dashboard';
+import Dashboard from './components/Dashboard/dashboard';
 import './index.css';
 import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 

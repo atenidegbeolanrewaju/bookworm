@@ -1,0 +1,138 @@
+.main-body {
+    padding: 3rem 0
+}
+
+.Home-container {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    /* justify-content: center; */
+    /* align-items: center;  */
+    /* align-content: center; */
+    margin: auto;
+    padding: 0 12px;
+}
+
+.main-container {
+    margin: 0 -12px;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.header {
+    margin-bottom:45px;
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+.header h2 {
+    margin: 5px 0
+}
+
+.header-p {
+    display: flex;
+     
+}
+
+.header-p ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-p p {
+    display: flex-start;
+    margin-right: 20px;
+    color: rgb(102, 100, 100);
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+
+.header-p2::before {
+    content:' / ';
+    position:absolute;
+    width: 10px;
+    display: flex;
+    margin: 0 -12px;
+    margin-top:5px;
+    font-size: 15px;
+}
+
+.wrap {
+    display: table;
+    width: 100%;
+}
+
+.block {
+    display:inline-table;
+    vertical-align: top;
+    width: 100%;
+    padding: 0 12px;
+
+}
+
+.block h3 {
+   margin-bottom: 8px; 
+}
+
+.Home-form {
+    display: table-cell;
+    vertical-align: top;
+    width: 75%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.side-nav {
+    display: flex;
+    padding:10px 0;
+}
+
+.side-nav:hover {
+    background-color: #dcedfe;
+    padding-left:15px;
+    transition: all 0.5s ease;
+
+}
+
+.side-nav i {
+    margin-top: 1px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: blue
+
+}
+
+
+.side-nav p {
+    text-decoration: none;
+    color:blue
+}
+
+.block h4 {
+    padding-bottom: 10px
+}
+
+.Home-form-container {
+
+}
+
+.Home-form-container h3 {
+    margin-bottom: 25px;
+}
+
+.form-input {
+    padding: 12px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 4px rgb(143, 143, 148);
+  border-radius: 2%;
+
+}
+
+.input-div {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
